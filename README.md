@@ -1,4 +1,4 @@
-# PG MULTITENANT
+# pg-multitenant - Multi-tenant Database Management Extension for PostgreSQL
 
 **pg-multitenant** is a PostgreSQL extension designed to facilitate multi-tenant database usage through the Shared Database Shared Schema approach. For more in-depth information on the multi-tenancy approach, please refer to the [Multi-tenancy](https://www.citusdata.com/blog/2023/05/09/evolving-django-multitenant-to-build-scalable-saas-apps-on-postgres-and-citus/) article on the Citus Blog Post.
 
