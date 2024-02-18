@@ -1,0 +1,6 @@
+# pg_multitenant.control
+comment = 'Multitenant support for PostgreSQL'
+default_version = '1.0'
+relocatable = false
+superuser = false
+schema='pg_catalog'

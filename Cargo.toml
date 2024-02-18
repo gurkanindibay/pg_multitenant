@@ -1,0 +1,29 @@
+[package]
+name = "pg_multitenant"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "pg-multitenant is a PostgreSQL extension that enables a multi-tenant database usage using the Shared Database Shared Schema approach."
+publish = true
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[features]
+default = ["pg16"]
+pg16 = ["pgrx/pg16","pgrx-tests/pg16"]
+pg_test = []
+
+[dependencies]
+# Add your dependencies here
+pgrx =  "=0.11.2"
+lazy_static = "1.4.0"
+
+
+[dev_dependencies]
+# Add your dev-dependencies here
+pgrx-tests = "=0.11.2"
+# pgrx-tests = "0.11.2"
+uuid = "1.7.0"
+
