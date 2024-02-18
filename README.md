@@ -50,4 +50,5 @@ The extension provides a set of functions to manage multi-tenant databases. The 
 2. **unmark_tenant_column(schema_name text, table_name text, column_name text):**
     This function unmarks a column as a tenant column. That means the tenant column is no longer used to filter the data for a given tenant.
 
-An example scenario to use the extension exists in the `scripts/test.sql` file.
+An example scenario to use the extension exists in the [`scripts/test.sql`](scripts/test.sql) file.
+
