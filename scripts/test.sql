@@ -38,23 +38,19 @@ select pgmt.mark_tenant_column('public', 'tenant_user', 'tenant_id');
 select pgmt.mark_tenant_column('public', 'tenant', 'tenant_id');
 
 
-select * from public.tenant;
+create role "<tenant_id>";
 
+grant all on table public.tenant to "<tenant_id>";
+grant all on table public.tenant_user to "<tenant_id>";
 
-
-create role "a7b9cb7c-224a-4de7-8e68-6d8862714246";
-
-grant all on table public.tenant to "a7b9cb7c-224a-4de7-8e68-6d8862714246";
-grant all on table public.tenant_user to "a7b9cb7c-224a-4de7-8e68-6d8862714246";
-
-set role "a7b9cb7c-224a-4de7-8e68-6d8862714246";
+set role "<tenant_id>";
 select * from public.tenant;
 
 select * from public.tenant_user;
 
 reset role;
 
+drop TABLE public.tenant_user;
+drop TABLE public.tenant;
 
-
-
-
+drop role "<tenant_id>" CASCADE;
