@@ -18,7 +18,7 @@ As of now, the extension is not available in binary format, so you need to build
 2. **Install pgrx extension**
 
     ```bash
-    cargo install pgrx
+    cargo install cargo-pgrx
     cargo pgrx init --pg16 download
     ```
 
