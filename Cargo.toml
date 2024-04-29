@@ -17,13 +17,13 @@ pg_test = []
 
 [dependencies]
 # Add your dependencies here
-pgrx =  "=0.11.2"
+pgrx =  "=0.11.4"
 lazy_static = "1.4.0"
 
 
 [dev_dependencies]
 # Add your dev-dependencies here
-pgrx-tests = "=0.11.2"
+pgrx-tests = "=0.11.4"
 # pgrx-tests = "0.11.2"
 uuid = "1.7.0"
 
